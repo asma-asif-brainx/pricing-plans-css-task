@@ -1,0 +1,409 @@
+body{
+    background-color:#F8F9FA;
+    font-family:  Helvetica;
+}
+.main-head{
+    color:#3B3663;
+    text-align: center;
+    padding:1% 0 1%;
+    Font-size: 40px;
+    Font-style: normal;
+    Font-weight: 500; 
+}
+
+.main{
+    display: flex;
+    justify-content:space-between; 
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-end;
+    margin-left:20px ;
+}
+
+
+.limited{
+    flex-basis: 300px;
+    height: 400px;
+    background-color: white;
+    border:3px solid #E8E8E8;
+    border-radius: 5px;
+    margin-top: 2%; 
+
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+
+
+    transition: transform 0.6s ease;
+}
+
+.limited:hover{
+    transform: translateY(-20px);
+}
+
+.limited-head{
+    color:#3B3663;
+    text-align: center;
+    margin:30px 0px 8px ;
+    Font-size: 30px;
+    Font-style: normal;
+    Font-weight: 600;
+}
+
+.limited-user-price{
+    text-align: center;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+month-limit{
+    position: relative;
+    text-align: center;
+    
+}
+.line-break-month-limit{
+    position: absolute;
+    color:rgb(250, 247, 247);
+    display: block;
+    width: 19%;
+    margin: 1%;
+    z-index: 1;
+}
+
+
+.limited-month{
+    background: white;
+    position: relative;
+    border-radius:20px;
+    border: 2px solid #E8E8E8;
+    width: 150px;
+    height:25px;
+    display: block;
+    margin: auto;
+    padding: 2%;
+    z-index: 3;
+    color:#0ABF53;
+    Font-size: 14.4px;
+    Font-style: normal;
+    Font-weight: 600;
+}
+
+
+
+.brilliant{
+    
+    background-color: white;
+    flex-basis: 320px;
+    border:3px solid #0ABF53;
+    height: 490px;
+    border-radius: 5px;
+     margin-right: 20px;
+
+     transition: transform 0.6s ease;
+}
+
+.brilliant:hover{
+    transform: translateY(-20px);
+}
+.brilliant-head{
+    color:#3B3663;
+    Font-size: 30px;
+    Font-style: normal;
+    Font-weight: 600;
+    text-align: center;
+}
+
+.brilliant-user-price{
+    text-align: center;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+
+month-brilliant{
+    position: relative;
+    text-align: center;
+    
+
+}
+.line-break-month-brilliant{
+    position: absolute;
+    color:rgb(250, 247, 247);
+    display: block;
+    width: 19%;
+    margin: 1%;
+    z-index: 1;
+}
+
+
+.brilliant-month{
+    background: white;
+    position: relative;
+    border-radius:20px;
+    border: 2px solid #E8E8E8;
+    width: 110px;
+    height:20px;
+    display: block;
+    margin: auto;
+    padding: 2%;
+    z-index: 3;
+    color:#0ABF53;
+    Font-size: 14.4px;
+    Font-style: normal;
+    Font-weight: 600;
+}
+
+.basic{
+    color:#3B3663;
+    background-color: white;
+    flex-basis: 300px;
+    border:3px solid #E8E8E8;
+    border-radius: 5px;
+    height: 400px;
+    margin-top: 2%; 
+    margin-right: 170px;
+
+    transition: transform 0.6s ease;
+}
+
+.basic:hover{
+    transform: translateY(-20px);
+}
+.basic-head{
+    color:#3B3663;
+    Font-size: 30px;
+    Font-style: normal;
+    Font-weight: 600;
+    text-align: center;
+}
+
+.basic-user-price{
+    text-align: center;
+    color: rgba(22, 28, 45, 0.7);
+}
+
+
+month-basic{
+    position: relative;
+    text-align: center;
+ 
+
+}
+.line-break-month-basic{
+    position: absolute;
+    color:#E8E8E8;
+    display: block;
+    width: 19%;
+    margin: 1%;
+    z-index: 1;
+}
+
+
+.basic-month{
+    color:#0ABF53;
+    background: white;
+    position: relative;
+    border-radius:20px;
+    border: 2px solid #E8E8E8;
+    width: 80px;
+    height:16px;
+    display: block;
+    margin: auto;
+    padding: 2%;
+    z-index: 3;
+    Font-size: 14.4px;
+    Font-style: normal;
+    Font-weight: 600;
+}
+
+
+ul{
+    list-style-type: none;
+    color: grey;
+    line-height: 40px;
+    font-size: 17px;
+}
+
+ul li{
+    position: relative;
+}
+
+ul li::before{
+    content:"";
+    position: absolute;
+   border-right:2px solid #0ABF53;
+   border-bottom:2px solid#0ABF53;
+   width:6px;
+   height:6px;
+   top: calc(50% - 4px);
+   left: -20px;
+   transform: translateY(7%) rotate(-45deg);
+}
+
+.limited-get-started-btn, .basic-get-started-btn{
+    background-color:rgb(237, 233, 233);
+    color:#0ABF53;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400px;
+    width:40%;
+    height:10%;
+    border: none;
+    margin: 0 30% 0 30% ;
+    border-radius: 5px;
+}
+
+.limited-get-started-btn:hover, .basic-get-started-btn:hover{
+    background-color:#0ABF53 ;
+    color:white;
+}
+
+.brilliant-get-started-btn{
+    background-color:#0ABF53 ;
+    color:white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400px;
+    width:40%;
+    height:10%;
+    border: none;
+    margin: 0 30% 0 30% ;
+    border-radius: 5px;
+}
+
+.side-nav{
+    float:right;
+    background-color: #0D1326;
+    width: 90px;
+    align-self: flex-start;
+    height: 340px;
+    margin-top: -62px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    position: fixed;
+}
+
+.arrow-nav {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 70px; 
+    width: auto; 
+    background-color: #0D1326; 
+}
+
+.arrow-nav::before {
+    content: "\00BB"; 
+    color: white; 
+    font-size: 40px; 
+    opacity: 0.5;
+    font-weight: normal;
+
+}
+
+.nav-line{
+    color: #F8F9FA;
+    width: 90%;
+    opacity: 0.3;
+}
+
+.single-arrow-icon{
+    color:white;
+}
+
+.back-div{
+    color: white;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 70px; 
+    width: auto; 
+}
+.back-arrow-img{
+    height: 40%;
+    width: 30%;
+    margin:0;
+}
+.download-div{
+    color:white;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 70px; 
+    width: auto; 
+}
+.buy-div{
+    color:white;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  height: 70px; 
+  width: auto; 
+}
+
+.buy-div:hover, .download-div:hover, .back-div:hover{
+    opacity:0.8;
+}
+
+
+.main-footer{
+    color: grey;
+    text-align: center;
+    font-size:18px;
+    font-style: normal;
+    font-weight: 400px;
+    margin: 4% 0 4%;
+    display: block
+}
+
+
+
+@media screen and (max-width:1024px){
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .limited{
+        flex-basis:40%;
+
+    }
+    .brilliant{
+        flex-basis:40%;
+    }
+    .basic{
+        flex-basis:40%;
+        transform: translateX(-32%);
+    }
+    .side-nav{
+        float:right;
+        margin-right:-90% ;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .main {
+        flex-direction: column;
+        align-items: center; 
+        padding: 0 10px; 
+    }
+
+    .limited, .brilliant, .basic {
+        flex: none; 
+        max-width: 90%; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .side-nav {
+        display: none; 
+    }
+}
