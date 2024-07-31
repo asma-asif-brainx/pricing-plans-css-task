@@ -1,16 +1,20 @@
-.container
-{
-    background-color:#f8f9fa;
-    font-family:  Helvetica;
-}
+:root {
+    --grey:#f8f9fa;
+    --dark-blue:#3B3663;
+    --dark-grey: #E8E8E8;
+    --light-green:#0ABF53;
+  }
+  
 
-body{
-    background-color:#f8f9fa;
-    font-family:  Helvetica;
-}
+.main-container{
+    background-color:var(--grey);
+    /* font-family:  Helvetica; */
+    margin: 0;
+}  
+
 .main-head
 {
-    color:#3B3663;
+    color:var(--dark-blue);
     text-align: center;
     padding:1% 0 1%;
     Font-size: 40px;
@@ -18,7 +22,8 @@ body{
     Font-weight: 500; 
 }
 
-.main {
+.main 
+{
     display: flex;
     flex-direction: row;
     height: auto;
@@ -32,21 +37,15 @@ body{
     position: relative;
     max-width: 290px;
     width: 100%;
-    min-height: 400px;
+    min-height: 410px;
     height: 100%; 
     background-color: white;
-    border:3px solid #E8E8E8;
+    border:3px solid var(--dark-grey);
     border-radius: 5px;
     display: flex;
     flex-direction: column;    
     transition: transform 0.9s;
     transform: translateY(10%);
-   
-}
-
-.team-members-count, .price-bold
-{
-    font-weight:bold;
 }
 
 .limited:hover
@@ -54,11 +53,16 @@ body{
     transform: translateY(3%);
 }
 
+.team-members-count, .price-bold
+{
+    font-weight:bold;
+}
+
 .limited-head
 {
     color:#3B3663;
     text-align: center;
-    transform: translateY(90%);
+    transform: translateY(80%);
     Font-size: 30px;
     Font-style: normal;
     Font-weight: 600;
@@ -73,13 +77,20 @@ body{
     transform: translateY(-30%);
 }
 
+.month-limit-main,.month-brilliant-main , .month-basic-main{
+    min-height: 45px;
+    height: 100%;
+}
+
 .month-limit
 {
     position: relative;  
     justify-content: center;
-    display: flex;
+    display: flex;    
 }
-.line{
+
+.line
+{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,10 +101,9 @@ body{
     position: absolute;
     width: 100%; 
     z-index: 1;
-    color:rgb(250, 247, 247);
+    border-top:#DEDEDE;
     max-width: 90%;
     display: flex;   
-
 }
 
 .limited-month
@@ -102,7 +112,7 @@ body{
     background: white;
     position: relative;
     border-radius:20px;
-    border: 2px solid #E8E8E8;
+    border: 1px solid #DEDEDE;
     min-width: 180px;
     width: 100%;
     min-height:17px;
@@ -110,23 +120,21 @@ body{
     display: inline-block; 
     margin: auto;
     z-index: 3;
-    color:#0ABF53;
+    color:var(--light-green);
     Font-size: 14.4px;
     Font-style: normal;
     Font-weight: 600;
     padding:5px 0px 0px 0px ;
 }
 
-
 .brilliant
 {
-  
     position: relative;
     background-color: white;
     max-width: 310px;
     width: 100%;
-    border:3px solid #0ABF53;
-    min-height: 480px;
+    border:3px solid var(--light-green);
+    min-height: 490px;
     height: 100%; 
     border-radius: 5px;
     transition: transform  0.9s;
@@ -137,14 +145,25 @@ body{
 .brilliant::before 
 {
     content: "";
-    position: absolute; /* Position relative to the .brilliant card */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 64px 64px 0 0;
-    border-color: #0ABF53 transparent transparent transparent;
+    border-color: var(--light-green) transparent transparent;
+}
+
+.brilliant::after {
+    content: "\2606"; 
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    border-width: 5px;
+    left: 10px; 
+    transform: rotate(-50deg);
+    transform: translateY(10%);
 }
 
 .brilliant:hover
@@ -159,7 +178,7 @@ body{
     Font-style: normal;
     Font-weight: 600;
     text-align: center;
-    transform: translateY(90%);
+    transform: translateY(80%);
 }
 
 .brilliant-user-price
@@ -182,12 +201,11 @@ body{
 .line-break-month-brilliant
 {
     position: absolute;
-    color:rgb(250, 247, 247);
+    border-top:#DEDEDE;
     max-width:88% ;
     width:100% ;
     z-index: 2;
     display: flex;
-
 }
 
 .brilliant-month
@@ -195,7 +213,7 @@ body{
     background: white;
     position: relative;
     border-radius:20px;
-    border: 2px solid #E8E8E8;
+    border: 1px solid #DEDEDE;
     min-width: 140px;
     width: 100%;
     min-height:10px;
@@ -203,7 +221,7 @@ body{
     display: block;
     margin: auto;
     z-index: 3;
-    color:#0ABF53;
+    color:var(--light-green);
     Font-size: 14.4px;
     Font-style: normal;
     Font-weight: 600;
@@ -213,7 +231,6 @@ body{
 
 .basic
 {
-   
     display: flex;
     flex-direction: column;  
     position: relative;
@@ -221,9 +238,9 @@ body{
     background-color: white;
     max-width: 290px;
     width: 100%;
-    border:3px solid #E8E8E8;
+    border:3px solid var(--dark-grey);
     border-radius: 5px;
-    min-height: 400px;
+    min-height: 410px;
     height: 100%; 
     transform: translateY(10%);
     transition: transform  0.9s ;
@@ -234,12 +251,13 @@ body{
     transform: translateY(3%);
 }
 
-.basic-head{
+.basic-head
+{
     color:#3B3663;
     Font-size: 30px;
     Font-style: normal;
     Font-weight: 600;
-    transform: translateY(90%);
+    transform: translateY(80%);
     text-align: center;
 }
 
@@ -254,7 +272,6 @@ body{
 
 .month-basic
 {
-   
     position: relative;  
     justify-content: center;
     display: flex;
@@ -263,7 +280,7 @@ body{
 .line-break-month-basic
 {
     position: absolute;
-    color:#E8E8E8;
+    border-top:#DEDEDE;
     display: block;
     max-width: 88%;
     width: 100%;
@@ -271,14 +288,13 @@ body{
     display: flex;
 }
 
-
 .basic-month
 {
-    color:#0ABF53;
+    color:var(--light-green);
     background: white;
     position: relative;
     border-radius:20px;
-    border: 2px solid #E8E8E8;
+    border: 1px solid #DEDEDE;
     min-width: 100px;
     width: 100%;
     min-height: 14px;
@@ -298,8 +314,7 @@ ul
     list-style-type: none;
     color: grey;
     line-height: 40px;
-    font-size: 17px;
-    
+    font-size: 17px; 
 }
 
 ul li
@@ -311,11 +326,12 @@ ul li::before
 {
     content:"";
     position: absolute;
-    border-right:2px solid #0ABF53;
-    border-bottom:2px solid#0ABF53;
+    border-right:2px solid var(--light-green);
+    border-bottom:2px solid var(--light-green);
     max-width:6px;
     width: 100%;
-    height:6px;
+    max-height: 6px;
+    height:100%;
     top: calc(50% - 4px);
     left: -20px;
     transform: translateY(7%) rotate(-45deg);
@@ -324,39 +340,35 @@ ul li::before
 .limited-get-started-btn
 {
     position: relative;
-    background-color:rgb(237, 233, 233);
-    color:#0ABF53;
+    background-color:rgba(170, 170, 170, 0.1);
+    color:var(--light-green);
     font-size: 18px;
     font-style: normal;
     font-weight: 400px;
-    max-width:45%;
+    max-width:48%;
     width: 100%;
-    
-    min-height:20%;
+    min-height:25%;
     height: 100%; 
     padding: 10px;
-   
     border: none;
     border-radius: 5px;
     margin: auto;
     margin-top: 0;
-
 }
 
-.basic-get-started-btn{
+.basic-get-started-btn
+{
     position: relative;
-    background-color:rgb(237, 233, 233);
-    color:#0ABF53;
+    background-color:rgba(170, 170, 170, 0.1);
+    color:var(--light-green);
     font-size: 18px;
     font-style: normal;
     font-weight: 400px;
-    max-width:45%;
+    max-width:48%;
     width: 100%;
-    
-    min-height:20%;
+    min-height:25%;
     height: 100%; 
     padding: 10px;
-   
     border: none;
     border-radius: 5px;
     margin: auto;
@@ -365,47 +377,44 @@ ul li::before
 
 .limited-get-started-btn:hover, .basic-get-started-btn:hover
 {
-    background-color:#0ABF53 ;
+    background-color:var(--light-green) ;
     color:white;
 }
 
 .brilliant-get-started-btn
 {
     position: relative;
-    background-color:#0ABF53 ;
+    background-color:var(--light-green) ;
     color:white;
     font-size: 18px;
     font-style: normal;
     font-weight: 400px;
-    max-width:40%;
+    max-width:48%;
     width: 100%;
-    min-height:20%;
+    min-height:25%;
     height: 100%;
     border: none;
     border-radius: 5px;
     margin: auto;
-      padding: 10px;
-      margin-top: 0;
+    padding: 10px;
+    margin-top: 0;
 }
 
-.side-nav
+.side-bar
 {
-
-}
-
-.side-bar{
     background-color: #0D1326;
     max-width: 90px;
     width: 100%;
     height: 100%;
-    min-height: 340px;
+    max-height: 340px;
     border-top-left-radius: 12px; 
     border-bottom-left-radius: 12px;
-    float: right;
+    right: 0;
     margin-top:3%;
-    /* position: fixed; */
-    
+    position: fixed;
+    z-index: 45;  
 }
+
 .arrow-nav
 {
     display: flex; 
@@ -427,7 +436,7 @@ ul li::before
 
 .nav-line
 {
-    color: #F8F9FA;
+    border-top: #F8F9FA;
     max-width: 90%;
     width: 100%;
     opacity: 0.3;
@@ -486,7 +495,8 @@ ul li::before
     opacity:0.8;
 }
 
-.line-break{
+.line-break
+{
     opacity: 0;
     margin: auto;
 }
@@ -512,54 +522,103 @@ ul li::before
         display: flex;
         justify-content:center;
         flex-wrap: wrap;
-       
-
+        max-width: 1024px;
+       width: 100%;
     }
-    .limited{
-       max-width:40%;
+    .limited
+    {
+        max-width: 350px;
        width: 100%;
 
     }
-    .brilliant{
-        max-width:40%;
+    .brilliant
+    {
+        max-width: 350px;
         width: 100%;
     }
-    .basic{
-        flex-basis:40%;
-        width: 100%;
-        transform: translateX(-54%);
-        
+    .basic
+    {
+        max-width: 350px;
+       width: 100%;
+        transform: translateX(-54%);    
+    }
+    .side-bar
+    {
+        z-index: 45;
     }
 } 
 
 @media screen and (max-width: 767px)
  {
-    .main{
-      
+    .main
+    {  
        flex-direction: column;
        align-items: center; 
-       
+       max-width: 767px;
+       width: 100%;
        row-gap:60px;;
     }
-    .limited{
-       max-width:100%;
+    .limited
+    {
+       max-width: 350px;
        width: 100%;
+       position: relative;
     }
-    .brilliant{
-        max-width:100%;
+    .brilliant
+    {
+        max-width: 350px;
         width: 100%;
     }
-    .basic{
-        max-width:100%;
+    .basic
+    {
+        max-width: 350px;
         width: 100%;
         transform: translateX(-1%);
         transform: translateY(-10%);
     }
-    .side-bar{
-        
+    .side-bar
+    {
         z-index: 45;
     }
 }
+
+@media screen and (max-width: 330px)
+ {
+    .main
+    {  
+       flex-direction: column;
+       align-items: center; 
+       max-width: 80%;
+       row-gap:60px;;
+    }
+    .limited
+    {
+       max-width:30%;
+       width: 100%;
+    }
+    .brilliant
+    {
+        max-width:30%;
+        width: 100%;
+    }
+    .basic
+    {
+        max-width:30%;
+        width: 100%;
+        transform: translateX(-1%);
+        transform: translateY(-10%);
+    }
+    .side-bar
+    {
+        z-index: 45;
+    }
+}
+
+
+
+
+
+
 
 
 
