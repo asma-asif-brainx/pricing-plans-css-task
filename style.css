@@ -4,12 +4,18 @@
     --dark-grey: #E8E8E8;
     --light-green:#0ABF53;
     --white: white;
+    --light-black:rgba(22, 28, 45, 0.7);
+    --mid-grey:grey;
+    --light-grey: #DEDEDE;
+    --white-grey:rgba(170, 170, 170, 0.1);
+    --light-white:#F8F9FA;
+    --bluish-black:#0D1326;
   }
   
 
 .main-container{
     background-color:var(--grey);
-    /* font-family:  Helvetica; */
+    font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Oxygen-Sans, Ubuntu, Cantarell, “Helvetica Neue”, sans-serif;
     margin: 0;
 }  
 
@@ -17,7 +23,7 @@
 {
     color:var(--dark-blue);
     text-align: center;
-    padding:1% 0 1%;
+    padding:1.5% 0 1.5%;
     Font-size: 40px;
     Font-style: normal;
     Font-weight: 500; 
@@ -36,7 +42,7 @@
 .limited
 {
     position: relative;
-    max-width: 290px;
+    max-width: 300px;
     width: 100%;
     min-height: 410px;
     height: 100%; 
@@ -45,8 +51,9 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;    
-    transition: transform 0.9s;
+    transition: transform 0.5s;
     transform: translateY(10%);
+    padding-bottom: 12px;
 }
 
 .limited:hover
@@ -61,7 +68,7 @@
 
 .limited-head
 {
-    color:#3B3663;
+    color:var(--dark-blue);
     text-align: center;
     transform: translateY(80%);
     Font-size: 30px;
@@ -74,7 +81,7 @@
     min-height: 25px;
     height: 100%;
     text-align: center;
-    color: rgba(22, 28, 45, 0.7);
+    color: var(--light-black);
     transform: translateY(-30%);
 }
 
@@ -87,7 +94,8 @@
 {
     position: relative;  
     justify-content: center;
-    display: flex;    
+    display: flex; 
+    align-items: center;   
 }
 
 .line
@@ -102,7 +110,7 @@
     position: absolute;
     width: 100%; 
     z-index: 1;
-    border-top:#DEDEDE;
+    border-top:var(--light-grey);
     max-width: 90%;
     display: flex;   
 }
@@ -113,10 +121,10 @@
     background:var(--white);
     position: relative;
     border-radius:20px;
-    border: 1px solid #DEDEDE;
+    border: 1px solid var(--light-grey);
     min-width: 180px;
     width: 100%;
-    min-height:17px;
+    min-height:24px;
     height: 100%;
     display: inline-block; 
     margin: auto;
@@ -138,9 +146,10 @@
     min-height: 490px;
     height: 100%; 
     border-radius: 5px;
-    transition: transform  0.9s;
+    transition: transform  0.5s;
     display: flex;
     flex-direction: column;  
+    padding-bottom: 12px;
 }
 
 .brilliant::before 
@@ -159,12 +168,13 @@
 .brilliant::after {
     content: "\2606"; 
     font-size: 20px;
+    font-weight:500 ;
     color: var(--white);
     position: absolute;
     border-width: 5px;
     left: 10px; 
     transform: rotate(-50deg);
-    transform: translateY(10%);
+    transform: translateY(20%);
 }
 
 .brilliant:hover
@@ -174,7 +184,7 @@
 
 .brilliant-head
 {
-    color:#3B3663;
+    color:var(--dark-blue);
     Font-size: 30px;
     Font-style: normal;
     Font-weight: 600;
@@ -187,7 +197,7 @@
     min-height: 25px;
     height: 100%;
     text-align: center;
-    color: rgba(22, 28, 45, 0.7);
+    color: var(--light-black);
     transform: translateY(-30%);
 }
 
@@ -196,13 +206,13 @@
     position: relative;  
     justify-content: center;
     display: flex;
-
+    align-items: center;
 }
 
 .line-break-month-brilliant
 {
     position: absolute;
-    border-top:#DEDEDE;
+    border-top:var(--light-grey);
     max-width:88% ;
     width:100% ;
     z-index: 2;
@@ -214,10 +224,10 @@
     background: var(--white);
     position: relative;
     border-radius:20px;
-    border: 1px solid #DEDEDE;
+    border: 1px solid var(--light-grey);
     min-width: 140px;
     width: 100%;
-    min-height:10px;
+    min-height:24px;
     height: 100%;
     display: block;
     margin: auto;
@@ -235,16 +245,16 @@
     display: flex;
     flex-direction: column;  
     position: relative;
-    color:#3B3663;
     background-color: var(--white);
-    max-width: 290px;
+    max-width: 300px;
     width: 100%;
     border:3px solid var(--dark-grey);
     border-radius: 5px;
     min-height: 410px;
     height: 100%; 
     transform: translateY(10%);
-    transition: transform  0.9s ;
+    transition: transform  0.5s ;
+    padding-bottom: 12px;
 }
 
 .basic:hover
@@ -254,7 +264,7 @@
 
 .basic-head
 {
-    color:#3B3663;
+    color:var(--dark-blue);
     Font-size: 30px;
     Font-style: normal;
     Font-weight: 600;
@@ -265,7 +275,7 @@
 .basic-user-price
 {
     text-align: center;
-    color: rgba(22, 28, 45, 0.7);
+    color:  var(--light-black);
     transform: translateY(-30%);
     min-height: 25px;
     height: 100%;
@@ -276,12 +286,13 @@
     position: relative;  
     justify-content: center;
     display: flex;
+    align-items: center;
 }
 
 .line-break-month-basic
 {
     position: absolute;
-    border-top:#DEDEDE;
+    border-top:var(--light-grey);
     display: block;
     max-width: 88%;
     width: 100%;
@@ -295,10 +306,10 @@
     background:var(--white);
     position: relative;
     border-radius:20px;
-    border: 1px solid #DEDEDE;
+    border: 1px solid var(--light-grey);
     min-width: 100px;
     width: 100%;
-    min-height: 14px;
+    min-height: 24px;
     height:100%;
     display: block;
     margin: auto;
@@ -310,20 +321,20 @@
     text-align: center;
 }
 
-ul
+.members-list
 {
     list-style-type: none;
-    color: grey;
+    color: var(--mid-grey);
     line-height: 40px;
     font-size: 17px; 
 }
 
-ul li
+.members-list li
 {
     position: relative;
 }
 
-ul li::before
+.members-list li::before
 {
     content:"";
     position: absolute;
@@ -341,18 +352,18 @@ ul li::before
 .limited-get-started-btn
 {
     position: relative;
-    background-color:rgba(170, 170, 170, 0.1);
+    background-color:var(--white-grey);
     color:var(--light-green);
     font-size: 18px;
     font-style: normal;
     font-weight: 400px;
-    max-width:48%;
+    max-width:45%;
     width: 100%;
     min-height:25%;
     height: 100%; 
-    padding: 10px;
+    padding: 12px 8px 12px 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: auto;
     margin-top: 0;
 }
@@ -360,18 +371,18 @@ ul li::before
 .basic-get-started-btn
 {
     position: relative;
-    background-color:rgba(170, 170, 170, 0.1);
+    background-color:var(--white-grey);
     color:var(--light-green);
     font-size: 18px;
     font-style: normal;
     font-weight: 400px;
-    max-width:48%;
+    max-width:45%;
     width: 100%;
     min-height:25%;
     height: 100%; 
-    padding: 10px;
+    padding: 12px 8px 12px 8px;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: auto;
     margin-top: 0;
 }
@@ -379,31 +390,31 @@ ul li::before
 .limited-get-started-btn:hover, .basic-get-started-btn:hover
 {
     background-color:var(--light-green) ;
-    color:white;
+    color:var(--white);
 }
 
 .brilliant-get-started-btn
 {
     position: relative;
     background-color:var(--light-green) ;
-    color:white;
+    color:var(--white);
     font-size: 18px;
     font-style: normal;
     font-weight: 400px;
-    max-width:48%;
+    max-width:45%;
     width: 100%;
     min-height:25%;
     height: 100%;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     margin: auto;
-    padding: 10px;
+    padding: 12px 8px 12px 8px;
     margin-top: 0;
 }
 
 .side-bar
 {
-    background-color: #0D1326;
+    background-color:var(--bluish-black);
     max-width: 90px;
     width: 100%;
     height: 100%;
@@ -411,7 +422,7 @@ ul li::before
     border-top-left-radius: 12px; 
     border-bottom-left-radius: 12px;
     right: 0;
-    margin-top:3%;
+    margin-top:2%;
     position: fixed;
     z-index: 45;  
 }
@@ -423,13 +434,13 @@ ul li::before
     justify-content: center; 
     height: 70px; 
     width: auto; 
-    background-color: #0D1326; 
+    background-color: var(--bluish-black); 
 }
 
 .arrow-nav::before 
 {
     content: "\00BB"; 
-    color: white; 
+    color:var(--white); 
     font-size: 40px; 
     opacity: 0.5;
     font-weight: normal;
@@ -437,22 +448,22 @@ ul li::before
 
 .nav-line
 {
-    border-top: #F8F9FA;
+    border-top: var(--light-white);
     max-width: 90%;
     width: 100%;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .single-arrow-icon
 {
-    color:white;
+    color:var(--white);
 }
 
 .back-div
 {
-    color: white;
+    color: var(--white);
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -469,9 +480,9 @@ ul li::before
 
 .download-div
 {
-    color:white;
+    color:var(--white);
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -481,9 +492,9 @@ ul li::before
 
 .buy-div
 {
-    color:white;
+    color:var(--white);
     text-align: center;
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -505,14 +516,14 @@ ul li::before
 .main-footer
 {
     position: relative;
-    color: grey;
+    color:var(--mid-grey);
     text-align: center;
     font-size:18px;
     font-style: normal;
     font-weight: 300px;
     top:40px;
     display: block;
-    background-color:#f8f9fa;
+    background-color:var(--light-white);
     min-height: 70px;
     height: 100%;
 }
@@ -611,6 +622,7 @@ ul li::before
     }
     .side-bar
     {
+        margin-top:10%;
         z-index: 45;
     }
 }
