@@ -532,6 +532,7 @@
 {
     opacity:0.9;
     cursor: pointer;
+    font-weight: 500;
 }
 
 .line-break
