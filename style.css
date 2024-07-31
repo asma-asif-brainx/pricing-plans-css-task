@@ -391,6 +391,7 @@
 {
     background-color:var(--light-green) ;
     color:var(--white);
+    cursor: pointer;
 }
 
 .brilliant-get-started-btn
@@ -412,6 +413,10 @@
     margin-top: 0;
 }
 
+.brilliant-get-started-btn{
+    cursor: pointer;
+}
+
 .side-bar
 {
     background-color:var(--bluish-black);
@@ -425,14 +430,20 @@
     margin-top:2%;
     position: fixed;
     z-index: 45;  
+    padding-bottom: 25px ;
 }
 
+.nav-arrow-line{
+    max-height: 120px;
+    height: 100%;
+}
 .arrow-nav
 {
     display: flex; 
     align-items: center; 
     justify-content: center; 
-    height: 70px; 
+    max-height:80px ;
+    height: 100%; 
     width: auto; 
     background-color: var(--bluish-black); 
 }
@@ -441,9 +452,9 @@
 {
     content: "\00BB"; 
     color:var(--white); 
-    font-size: 40px; 
+    font-size: 30px; 
     opacity: 0.5;
-    font-weight: normal;
+    font-weight: 200;
 }
 
 .nav-line
@@ -471,10 +482,11 @@
     width: auto; 
 }
 
-.back-arrow-img
+.back-arrow-icon
 {
-    height: 40%;
-    max-width: 30%;
+    max-height: 25%;
+    height: 100%;
+    max-width: 20%;
     width: 100%;
 }
 
@@ -490,6 +502,13 @@
     width: auto; 
 }
 
+.download-icon{
+    max-height: 25%;
+    height: 100%;
+    max-width: 20%;
+    width: 100%;
+}
+
 .buy-div
 {
     color:var(--white);
@@ -502,9 +521,17 @@
     width: auto; 
 }
 
+.cart-icon{
+    max-height: 25%;
+    height: 100%;
+    max-width: 20%;
+    width: 100%;
+}
+
 .buy-div:hover, .download-div:hover, .back-div:hover
 {
-    opacity:0.8;
+    opacity:0.9;
+    cursor: pointer;
 }
 
 .line-break
@@ -526,6 +553,10 @@
     background-color:var(--light-white);
     min-height: 70px;
     height: 100%;
+}
+
+.footer-w3layout:hover{
+    color: var(--light-green);
 }
 
  @media screen and (max-width:1024px)
