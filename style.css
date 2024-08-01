@@ -642,14 +642,4 @@
     }
 }
 
-@media screen and (height:1366px){
-    .container > div:not(.side-nav){
-        transform: translateY(50%);
-    }
-    .main-head{
-        transform: translateY(-100%);
-    }
-    .main-footer{
-        transform: translateY(100%);
-    }
-}
+
