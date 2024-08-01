@@ -653,7 +653,7 @@
 @media screen and (max-width: 767px)
  {
     .main-head{
-        font-size: 30px;
+        font-size: 35px;
         padding:40px 0 0;
         bottom: 0;
     }
@@ -703,6 +703,10 @@
 
 
 @media screen and (max-width: 330px){
+    .main-head{
+        font-size: 30px;
+    }
+    
     .limited
     {
         max-width: 260px;
