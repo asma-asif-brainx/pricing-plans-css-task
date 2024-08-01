@@ -653,7 +653,7 @@
 @media screen and (max-width: 767px)
  {
     .main-head{
-        font-size: 40px;
+        font-size: 30px;
         padding:40px 0 0;
         bottom: 0;
     }
@@ -684,7 +684,7 @@
     }
     .side-bar
     {
-        top: 40px;
+        top: 60px;
     }
     .main-footer{
         padding-left: 28px;
@@ -703,9 +703,6 @@
 
 
 @media screen and (max-width: 330px){
-    .main-head{
-        font-size: 30px;
-    }
     .limited
     {
         max-width: 260px;
